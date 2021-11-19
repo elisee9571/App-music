@@ -1,0 +1,17 @@
+<!-- <div class="container">
+    <div class="alert alert-primary" style="margin-top: 50px;">
+        <p>voici mon text</p>
+        <div class="progress" style="height: 10px; margin: 20px;">
+            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <p>2/4</p>
+    </div>
+</div> -->
+
+<div *ngIf="showplayer" class="alert alert-primary" role="alert">
+    {{album.title}}, artist: {{ album.name }}
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" [style.width]="ratio + '%'" aria-valuenow="" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    {{ current }} / {{ total}}
+</div>

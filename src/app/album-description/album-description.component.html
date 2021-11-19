@@ -1,0 +1,31 @@
+<div class="card">
+    <div class="card-header">Featured</div>
+    <div class="card-body">
+        <h5 class="card-title">{{album.title}}</h5>
+        <p class="card-text">{{album.name}}</p>
+        <p class="card-text">{{album.description}}</p>
+        <p class="card-text">Duration: {{album.duration || 0}}</p>
+        <p class="card-text">Like: {{album.like || 'no Like'}}</p>
+
+        <img width="300" src="{{album.url}}" alt="Group Music" class="rounded mx-auto d-block">
+    </div>
+</div>
+
+<!-- <div class="card" *ngIf="album">
+    <div class="card-header">
+      Featured
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{ album.title }}</h5>
+      <h6>Name: {{album.name}}</h6>
+      <p class="card-text">{{album.description }}</p>
+      <p>Duration: {{ album.duration || 0 }} min</p>
+      <p>Like: {{ album.like || 'no Like' }}</p>
+      <ul *ngIf="album.tags" class="list-inline">
+        <li class="list-inline-item" *ngFor="let word of album.tags">
+          <span class="badge badge-info">{{ word }}</span>
+        </li>
+      </ul>
+      <img *ngIf="album.url" width="300" src="{{album.url}}" class="rounded mx-auto d-block" alt="...">
+    </div>
+  </div> -->
